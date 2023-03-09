@@ -4,7 +4,7 @@
 int main()
 {
     FILE* fp;
-    fp=fopen("a.bin","w+");
+    fp=fopen("a.bin","wb+");
     int a[]={1,2,3};
     char b[]="ABC";
     float c[]={1.1,1.2,1.3};

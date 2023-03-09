@@ -26,6 +26,7 @@ int main()
     em.em_age = 18;
     strcpy(em.em_phone, "0937123456");
     em.em_salary = 1000.30;
+    printf("size: %d\n",(int)sizeof(employee_t));
     employee_info (em);
     return 0;
 }

@@ -14,7 +14,7 @@ void employee_info(employee_t my_emp){
     printf("name: %s\n", my_emp.em_name);
     printf("age: %d\n", my_emp.em_age);
     printf("phone: %s\n", my_emp.em_phone);
-    printf("salary: %f\n", my_emp.em_salary);
+    printf("salary: %.2f\n", my_emp.em_salary);
     
 }
 

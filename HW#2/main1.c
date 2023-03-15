@@ -10,7 +10,7 @@ void lottoNum(){
             n[k][i-1]=(i!=7)?rand()%69+1:rand()%9+1;
             for(int j=0;j<=i;j++){
                 if(num==n[k][j]){
-                    n[k][j]=(i!=7)?rand()%69+1:rand()%9+1;
+                    n[k][j]=(j!=7)?rand()%69+1:rand()%9+1;
                     j--;
                 }
             }

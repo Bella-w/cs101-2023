@@ -17,7 +17,7 @@ void lottoNum(){
         }
     }
     for(int k=0;k<=5;k++){
-        for(int i=0;i<7;i++){
+        for(int i=0;i<6;i++){
             for(int j=0;j<i;j++){
                 if(n[k][j]>n[k][i]){
                     temp=n[k][j];

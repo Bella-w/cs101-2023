@@ -15,11 +15,11 @@ class Fueltank{
             else if(v<=m_FueltankCapacity&&gas!=m_Gas_grade)
                 cout<<"Error : Gas_grade : "<<gas<<" Correct Gas_grade : "<<m_Gas_grade<<endl;
             else if (v>m_FueltankCapacity&&gas==m_Gas_grade){
-                cout<<"Error : FueltankCapacity : "<<m_Gas_grade<<" but fuel up : "<<v<<endl;
+                cout<<"Error : FueltankCapacity : "<<m_FueltankCapacity<<" but fuel up : "<<v<<endl;
                 cout<<"fuel_up : "<<v<<" Gas_grade : "<<gas<<endl; 
             }
             else if (v>m_FueltankCapacity&&gas!=m_Gas_grade){
-                cout<<"Error : FueltankCapacity : "<<m_Gas_grade<<" but fuel up : "<<v<<endl;
+                cout<<"Error : FueltankCapacity : "<<m_FueltankCapacity<<" but fuel up : "<<v<<endl;
                 cout<<"Error : Gas_grade : "<<gas<<" Correct Gas_grade : "<<m_Gas_grade<<endl;
             }
             return 0;

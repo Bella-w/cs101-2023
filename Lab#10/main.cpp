@@ -16,8 +16,7 @@ class ReadClass{
     public:
         void showClass(){
             ifstream in;
-            string line;
-
+            string line,all;
             int count=0;
             in.open("main.cpp");
             if(in.fail()){
@@ -27,30 +26,19 @@ class ReadClass{
             while(getline(in,line)){
                 if(line[0]=='c'&&line[1]=='l'&&line[2]=='a'&&line[3]=='s'&&line[4]=='s'){
                     count++;
-                }
-            }
-            in.close();
-            
-            in.open("main.cpp");
-            cout<<count<<" class in main.cpp"<<endl;            
-            while(getline(in,line)){
-                if(line[0]=='c'&&line[1]=='l'&&line[2]=='a'&&line[3]=='s'&&line[4]=='s'){
                     line[line.size()-1]='\0';
-                    cout<<line<<endl;
-                    count++;
+                    all=all+(line+'\n');
                 }
             }
+            cout<<count<<" class in main.cpp"<<endl;
+            cout<<all<<endl;
             in.close();
-            
         }
-    
-    
 };
 
 int main()
 {
     ReadClass rfile;
     rfile.showClass();
-
     return 0;
 }
